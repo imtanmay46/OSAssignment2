@@ -1,0 +1,5 @@
+cd linux-5.19.9
+make -j$(nproc)
+sudo cp -v arch/x86_64/boot/bzImage /boot/vmlinuz-5.19,9
+sudo make modules
+sudo make modules_install
